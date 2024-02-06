@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar">
+        <h1 class="logo">FARMERS</h1>
+       <ul class="nav-links">
+        <li class="active"><a href=""></a>Home</li>
+        <li><a href=""></a>About US</i></li>
+        <li><a href=""></a>Farming</li>
+        <li><a href=""></a>Explore</li>
+        <li class="ctn"><a href="">Contact</a></li>
+        </ul>   
+       <img src="bars.webp" alt="" class="menu-btn">
+    </div>
+    <header>
+        <div class="header-content">
+            <h2>"A FARMER IS A MAGICIAN WHO....."</h2>
+            <div class="line"> </div>
+            <h1>HOPE OF NEW BEGINNING</h1> 
+            <a href="" class="ctn">Learn More</a> 
+
+        </div>
+    </header>
+    <!--== project-->
+    <section class="project">
+        <div class="title">
+            <h1>Upcoming Project</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./image/tomo.jpg" width="400px" height="400px">
+                <h4>Tomato farming</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam ipsum iusto incidunt libero suscipit non corporis, odio distinctio veritatis eum labore consequuntur, sit veniam id, eius exercitationem alias saepe in accusantium eius deserunt atque.</p>
+                <a href="" class="ctn">Learn More</a>
+              </div>
+              <div class="col">
+                    <img src="./image/ropai.jpg" width="400px" height="400px">
+                    <h4>Rice farming</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam ipsum iusto incidunt libero suscipit non corporis, odio distinctio veritatis eum labore consequuntur, sit veniam id, eius exercitationem alias </p>
+                    <a href="" class="ctn">Learn More</a>
+                </div>
+        </div>
+    </section>
+    <section class="learn">
+        <div class="learn-content">
+            <h1>Learn The Method </h1>
+            <div class="line"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit magnam accusamus aspernatur, quasi minus omnis optio beatae autem cum quas.</p>
+        <a href="" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <section class="farming">
+       <div class="row">
+        <div class="col">
+            <h1>Traditional Equipment</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae consectetur delectus, aliquam laborum mollitia.</p>
+            <a href="" class="ctn">Learn More</a>
+        </div>
+        <div class="col">
+            <div class="img-gallery">
+                <img src="./image/halo.jpg" alt="" >
+                <img src="./image/naghalo2.jpg" alt="" >
+                <img src="./image/kodhlo.jpeg" alt="" >
+                <img src="./image/thunacha.jpg" alt="" >
+            </div>
+        </div>
+       </div>
+    </section>
+    <section class="footer">
+            <p>copyright2@2022orginefarming</p>
+    </section>
+    <script> 
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+    menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+
+}
+
+.active{
+    color:#fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navbar{
+    position: absolute;
+    top:0; 
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+    
+}
+.nav-links li:hover{
+    color:#fc036b;
+    font-weight: bold;
+}
+header{
+    height: 100vh;
+    background-image: url("./image/climate-of-nepal.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #8bffee;
+    border-radius: 30px;
+    color: rgb(31, 27, 27);
+}
+.ctn:hover
+{
+    background: rgb(11, 48, 31);
+    color: whitesmoke;
+    transition: 0.5s ease-in-out;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* events*/
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color:#49497e;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project .row{
+  margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p{
+  color: #7c7c7c;  
+  padding: 0px 5px;
+}
+.project .ctn{
+    margin-top: 30px;
+}
+.project img{
+    transition-duration: 2s;
+}
+.project img:hover{
+    width: 300px;
+    height: 400px;
+}
+.learn{
+    width:100%;
+    height:100vh;
+    background-image: url('./image/Nepal1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.learn-content{
+    width: 50%;
+    padding: 50px;
+    color:whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.learn-content h1{
+    font-size: 7vmin;
+    
+}
+.learn-content .line{
+    margin-bottom: 50px;
+}
+.learn-content p{
+    color:#fff;
+}
+.learn-content .ctn{
+    margin-top: 30px;
+
+}
+
+.farming .row .col{
+    width: 50%;   
+}
+.img-gallery img{
+    flex-wrap: wrap;
+     width: 300px;
+     height: 300px;
+     transition: 2s;
+}
+.img-gallery img:hover{
+   width: 350px;
+   height: 350px;
+}
+.farming .col h1{
+ font-size: 6vmin;
+ color: #484872;
+ 
+}
+.farming .col p{
+    padding: 0;
+    margin: 30px auto;
+}
+.farming .line{
+    margin-left: 200px;
+}
+.footer{
+    width: 100%;
+    min-height: 80px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+
+/* mobile device*/
+@media only screen and (max-width: 850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding:0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+          flex-direction: column;
+          width: 100%;
+          height: 100vh;
+          justify-content: center;
+          background: #5c5ca2;
+          opacity: 0.5;
+          margin-top: -900px;
+          transition: all 0.5s ease;
+        
+    }
+    .mobile-menu{
+         margin-top: 0;
+         border-bottom-right-radius: 20%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    /* project */
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        width: 100%;
+    }
+    /* learn*/
+    .learn-content{
+        width: 100%;
+    }
+    .farming{
+        width: 100%;
+    }
+    .farming .row .col{
+        width: 100%;
+    }
+    .farming .row .img-gallery{
+        width: 90%;
+    }
+    .img-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .img-gallery img{
+        width: 100%;
+
+    }
+}
+
+
